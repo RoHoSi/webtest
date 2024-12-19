@@ -1,0 +1,56 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background and centering */
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #071d49; /* Page Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the text */
+.container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    font-size: 3em; /* Adjust as needed */
+    color: #ffffff; /* Static text color */
+}
+
+/* Static parts of the text */
+.static-text {
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+/* Word wrapper */
+.word-wrapper {
+    position: relative;
+    height: 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust width if needed */
+    justify-content: center;
+}
+
+/* Single dynamic word */
+.word {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Hover effects (optional) */
+.static-text:hover, .word-wrapper:hover {
+    color: #ffcc00;
+    cursor: pointer;
+}
